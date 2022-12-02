@@ -34,16 +34,16 @@
     
         
 
-        <div class="show-container">
-            <nav class="navbar navbar-expand-lg">
+        
+            <nav class="navbar navbar-expand-lg" style="position: fixed;">
                 <p class="navbar-brand" style="font-size: 2.5rem;" href="#"><img width="260" height="87" src="https://adaniuni.ac.in/wp-content/uploads/2022/06/logo.png" class="attachment-large size-large" alt loading="lazy"></p>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                    <a class="nav-link" href="#">Education <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://colorhunt.co/palettes/gold">Education <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#">Admissions + Aid</a>
@@ -57,6 +57,7 @@
                 </ul>
                 </div>
             </nav>
+        <div class="show-container">
             <div class="main-title">
                 <h1 style="font-size: 6rem; text-align: left;">
                     Growth
@@ -70,6 +71,22 @@
             </div>
         </div>
     </div>
+
+    <!-- JavaScript for scrolling effect -->
+
+    <script>
+        window.onscroll = () => {
+            let nav = document.querySelector('nav');
+            if(window.pageYOffset > 725){
+                nav.classList.add('sticky');
+                $('nav-link').addClass('change')
+            }
+            else{
+                nav.classList.remove('sticky');
+                $('nav-link').removeClass('change')
+            }
+            }
+    </script>
 
     <!-- Dummy Container -->
     <div class="container-fluid style=" style="padding-left: 0px; padding-right: 0px;">
